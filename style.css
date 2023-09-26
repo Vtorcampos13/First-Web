@@ -1,0 +1,372 @@
+@font-face {
+    font-family: 'Sunday';
+    src: url(./assets/fonts/Sunday\ Grapes.ttf) format( 'wroff2' );
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Sunday', sans-serif;
+    margin: 0;
+    background-color: #F3A7C5;
+    color: #ffff;
+}
+
+
+h1 {font-size: 3.5em;}
+h2 {font-size: 2.7em;}
+h3 {font-size: 2em;}
+p {font-size: 1.25em;
+    margin: 20px;
+}
+ul {list-style: none}
+li {font-size: 1.25em;}
+pre {margin:0}
+
+button {
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5%;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: #5500ff;
+}
+
+button:hover {
+    background-color: #8b53fc;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+.intro{
+    font-size: 0.5em;
+}
+
+.color-mio{color:#e50500;}
+
+
+
+
+
+img#header{
+    display: column;
+    width: 30%;
+    padding: 20px 0px;
+}
+
+
+header .container {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffff;
+
+}
+
+header a:hover{
+    color: #E50500;
+}
+
+
+#bio {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 80vh;
+    color: #5500ff;
+    background-image: url(./assets/fondo-index.jpeg);
+}
+
+#soy-lopa .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#mis-trabajos{
+    background-color: #e50500;
+    color: #ffff;
+    text-align: center;
+    padding: 80px 15px;
+}
+
+#mis-trabajos .container{
+    text-align: center;
+}
+
+
+#mis-trabajos h2{
+    margin-top: 0;
+}
+
+#mis-trabajos p{
+    display: none;
+}
+
+#mis-trabajos .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(./assets/arf.jpg);
+
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(./assets/bbklive.jpg);
+}
+
+.carta:last-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(./assets/mijas.jpg)
+}
+
+
+#tareas .container{
+    text-align: center;
+    padding: 200px 12px;
+    margin: 60px 0;
+}
+
+#tareas li{
+    margin: 15px 0px;
+    font-family: bold;
+}
+
+#contactame {
+    text-align: center;
+    justify-content: center;
+}
+
+
+/*Pagina trabajos*/
+
+#trabajos .container {
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+#trabajos h3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#trabajos .trabajos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#trabajos video{
+    width: 57%;
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+
+
+#contactame .container{
+    padding-top: 100px;
+}
+
+
+
+
+/*Pagina de contacto*/
+
+#datos{
+    margin: 100px 0;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #e50500;
+    border: 2px solid #ffff;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"]:focus,input[type="apellidos"]:focus,input[type="telefono"]:focus{
+    background-color: #feff1f;
+}
+
+
+legend {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+input[type="reset"],input[type="submit"] {
+    background-color: #5500ff; 
+    color: white; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    margin: 20px 0px;
+}
+
+input[type="reset"]:hover,input[type="submit"]:hover {
+    background-color: #8b53fc; 
+}
+
+fieldset{
+    border: 0px solid #ffff;
+    padding: 0px;
+    margin: 0px;
+}
+
+footer .container {
+    height: 150px;;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-weight: bold;
+}
+
+
+
+
+@media (min-width: 720px) {
+    
+    header.container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header.nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    
+    #soy-lopa .container{
+        display: flex;
+        justify-content: center;
+    }
+
+    #soy-lopa .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #soy-lopa .img-container{
+        background-image: url(./assets/yo.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 600px;
+        width: 600px;
+    }
+
+    #soy-lopa h2{
+        padding-left: 20px;
+    }
+
+    #mis-trabajos .festivales{
+        display: flex;
+        justify-content: space-between;
+        height: auto;
+        width: auto;
+        margin: 100px 0;
+    }
+
+    #mis-trabajos p{
+        display: block;
+        margin-bottom: 100px;
+    }
+
+    #mis-trabajos .carta{
+        padding: 15px;
+    }
+
+    #tareas{
+        background-image: url(./assets/cartel.jpg);
+        background-repeat: no-repeat;
+        background-size: 400px 600px;
+        background-position: calc(250vw - 800px);
+    }
+
+    #tareas .container{
+        text-align: initial;
+    }
+
+    #tareas ul{
+        margin-left: 100px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    #tareas{
+        background-position-x: calc(100vw - 800px);
+    }
+}
